@@ -1,0 +1,21 @@
+
+Competencies
+
+Up until now we’ve been creating our database by hand
+Active Record is an ORM (Object Relational Mapping) implementation for Rails
+Connects relational database tables to our ruby applications
+Uses Ruby’s robust class relationships to integrate databases into applications
+Inheritance, validations, other relationships all translate over via Active Record
+
+Applications
+Implement Active Record in applications
+Understand the inherent Ruby Class integration
+
+Active Record documentation:
+
+https://github.com/rails/rails/tree/master/activerecord
+
+
+Active Record Rails Guide: 
+
+http://guides.rubyonrails.org/active_record_basics.html
