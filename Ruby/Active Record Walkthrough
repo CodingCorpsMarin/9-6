@@ -1,0 +1,49 @@
+Intro to Active Record
+
+Let’s get acquainted with active record.
+Fork and Clone https://github.com/CodingCorpsMarin/active-record-intro-code-base-challenge
+
+Open the repo and let’s check out what we can do with our new toy.
+
+Rakefile:
+bundle exec rake -T (for tasks) lets us know what we can do 
+
+Install the Bundle gem
+
+gem install bundler 
+
+Gems are packets of code that are like tools for our toolbox. They are Ruby add-ons do specific things/make life easier from something really small to something really big. 
+
+Bundler is a gem that installs ALL the gems in your gemfile at once.
+You need to install all your gems before starting work on a project for the functionality to all work
+Run bundler with bundle install
+
+Create database in the command line with 
+bundle exec rake db:create
+
+Check version with 
+bundle exec rake db:version 
+
+Run specs with 
+bundle exec rake spec (this is essentially your “learn” command”, in fact, I think it is, they just aliased it to “learn”)
+
+Run migrations with
+bundle exec rake db:migrate
+Whenever you make changes to your database schema (structure), you have to migrate the changes 
+
+Check version, run specs
+
+This exercise has seed data (dummy database entries to get our database prepopulated), let’s get it onto our database
+bundle exec rake db:seed
+
+Test out our database associations in the console (irb)
+bundle exec rake console 
+Dog.all
+
+Rollback our database (undo changes)
+bundle exec rake db:rollback
+
+Drop database
+bundle exec rake db:drop
+
+
